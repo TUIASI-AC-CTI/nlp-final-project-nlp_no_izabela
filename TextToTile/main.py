@@ -143,7 +143,7 @@ def generate_tiles():
                     attempts += 1
                     continue
 
-                filename = f"generated_tiles/{uuid.uuid4().hex}.png"
+                filename = f"generated_tiles/{description}_{uuid.uuid4().hex}.png"
                 image.save(filename)
 
                 dominant_color = get_dominant_color(image)

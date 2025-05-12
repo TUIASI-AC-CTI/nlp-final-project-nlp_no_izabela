@@ -1,3 +1,5 @@
 torchvision
 transformers
 accelerate
+huggingface_hub[hf_xet]
+hf_xet
