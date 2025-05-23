@@ -1,5 +1,11 @@
-torchvision
-transformers
-accelerate
-huggingface_hub[hf_xet]
-hf_xet
+torch>=2.1.0
+torchvision>=0.16.0
+transformers>=4.38.0
+diffusers>=0.27.2
+accelerate>=0.28.0
+peft>=0.10.0
+huggingface_hub>=0.30.0
+bitsandbytes
+pandas
+datasets>=2.18.0
+scipy>=1.10.0
