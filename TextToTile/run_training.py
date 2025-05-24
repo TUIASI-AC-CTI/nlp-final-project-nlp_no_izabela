@@ -6,7 +6,7 @@ python_path = os.path.join(os.environ["VIRTUAL_ENV"], "Scripts", "python.exe")
 cmd = [
     python_path,
     "train_lora.py",
-    "--pretrained_model_name_or_path=runwayml/stable-diffusion-v1-5",
+    "--pretrained_model_name_or_path=stabilityai/stable-diffusion-3.5-medium",
     "--train_data_dir=data/dataset_lora",
     "--output_dir=lora_output",
     "--resolution=512",
