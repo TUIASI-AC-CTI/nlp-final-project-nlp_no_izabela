@@ -1,5 +1,7 @@
 Link to download the model without training:
-https://drive.google.com/file/d/1K5MGeCPIzccFkX3-WCk7XhLTYAzirdTX/view?usp=sharing
+https://drive.google.com/file/d/1Uke8UIWm9CP3ffK3LuAYS4tb5nQx5j1W/view?usp=sharing
+Link to .venv:
+https://drive.google.com/file/d/1cf4fT_9fyeb_UCOqnvCNoPgAj-B-qTTU/view?usp=drive_link
 
 To train:
 
