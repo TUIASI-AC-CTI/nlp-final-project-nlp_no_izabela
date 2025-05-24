@@ -16,4 +16,4 @@ for _, row in df.iterrows():
     with open(os.path.join(output_dir, img.replace(".png", ".txt")), "w", encoding="utf-8") as f:
         f.write(caption)
 
-print("✅ Dataset pregătit în: data/dataset_lora")
+print(" Dataset ready: data/dataset_lora")

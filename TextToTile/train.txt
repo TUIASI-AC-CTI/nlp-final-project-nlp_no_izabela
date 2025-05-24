@@ -1,0 +1,47 @@
+Link to download the model without training:
+https://drive.google.com/file/d/1K5MGeCPIzccFkX3-WCk7XhLTYAzirdTX/view?usp=sharing
+
+To train:
+
+Run test.py to check if hugging face is working properly
+"huggingface-cli login" in terminal to login
+Get the token from: https://huggingface.co/settings/tokens
+
+Run the file "dataset_prepare.py" to create the dataset
+The training requires each .png to have the file .txt with the description in the same folder with the same name as it that contains the caption
+The dataset I have has all the captions inside "tile_captions.csv"
+The dataset_prepare.py file will make the folder "dataset_lora" to train on it
+
+
+Run the file "run_training.py" to train the model. A new folder named "lora_output" will be generated
+It will be around 130 GB, so make sure you have space. If not, comment in the "train_lora.py" file the part where it saves checkpoints
+
+After training, you can run main.py
+If you don't want to train at all, add the final model here: "lora_output/final_lora_model.pt"
+
+
+The main program will download the model from hugging face and use it. We have both the default and the fine tuned model downloaded
+We trained the transformer
+
+Here are the components:
+text_encoder -	Encodes your prompt (the input text) into a dense vector representation.
+text_encoder_2 -	Additional encoder for enhanced prompt comprehension (SD 3.5 uses multiple).
+text_encoder_3 -	Often used for advanced conditioning (e.g., negative prompts, embeddings).
+tokenizer -	Breaks down text into tokens for text_encoder.
+tokenizer_2 -	Tokenizer paired with text_encoder_2.
+tokenizer_3	- Tokenizer paired with text_encoder_3.
+transformer	- This is the main image generator – equivalent to UNet in older SD versions. This is the component we fine-tuned with LoRA.
+vae	- The Variational Autoencoder: compresses and decompresses images. Used to convert between pixel space and latent space.
+scheduler -	Controls the noise removal steps during the denoising process (diffusion).
+
+
+Best prompts:
+snow tile, pixel art, top-down
+stone or rock tile, pixel art, top-down
+sand tile, pixel art, top-down
+dirt or wood tile, pixel art, top-down
+farming dirt with grass patches, alternative version
+farming soil tile with simple dirt texture
+wider farming dirt texture for agriculture scenes
+dirt texture with grid pattern and some vegetation
+
