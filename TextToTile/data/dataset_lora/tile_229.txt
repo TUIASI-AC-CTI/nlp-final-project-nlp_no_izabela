@@ -1,1 +1,1 @@
-water tile, pixel art, top-down
+stone or rock tile, pixel art, top-down

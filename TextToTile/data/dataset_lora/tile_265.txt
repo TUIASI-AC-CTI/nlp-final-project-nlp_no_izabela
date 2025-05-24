@@ -1,1 +1,1 @@
-dark floor tile, pixel art, top-down
+water tile, pixel art, top-down

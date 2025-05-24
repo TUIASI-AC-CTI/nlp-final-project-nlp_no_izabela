@@ -1,1 +1,1 @@
-snow tile, pixel art, top-down
+sand tile, pixel art, top-down
